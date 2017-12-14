@@ -52,8 +52,6 @@ function dropBox(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("id");
     var dataBox = ev.dataTransfer.getData("parid");
-    console.info(data);
-    console.info(dataBox);
     if (document.getElementById(data) && document.getElementById(data).classList.contains('d_cell')) {
         var dom = document.getElementById(data).outerHTML;
         var target = ev.target.classList.contains("d_box") ? ev.target : ev.target.closest(".d_box");

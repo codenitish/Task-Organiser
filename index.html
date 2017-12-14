@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <script type="text/javascript" src="scripts/main.js" ></script>
+    </head>
+    <body>
+      <header>
+        <hgroup>
+          <h1>...Task Organiser...</h1>
+        </hgroup>
+        <section>
+          <div class="board-wrapper">
+            <div class="board-main-content">
+              <div class="board-canvas">
+                <div id="board">
+                  <div id="main_wrapper" class="main_wrapper" ondragover="allowDropContainer(event)">
+                    <div class="d_box" id="dbox_0" draggable="true" ondragstart="dragBox(event)" ondrop="dropBox(event)" ondragover="allowDrop(event)">
+                      <a href="#" class="d_cell">Add a Card...</a>
+                    </div>
+                      <a href="#" id="addBox" class="addList">Add a List...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    </body>
+</html>
